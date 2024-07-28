@@ -16,7 +16,7 @@
 	<c:if test="${ !empty list }">
 		<div class="cover">
 		<span class="h">오늘의 운세를 공유해보세요</span>
-		<span class="material-icons" onclick="location.href='form'">add</span>
+		<button class="material-icons md-18" onclick="location.href='form'">add</button>
 		</div>
 		<c:forEach items="${list }" var = "board">
 			<div class="container" onclick="location.href='/board/password?id=${board.id}'">
@@ -31,7 +31,7 @@
 			<span class="h">오늘의 운세를 공유해보세요</span>
 			<img class="ethi-pic" src="/resources/img/img-baby-ethi.png" alt="Ethi"/>
 			<div class="not">등록된 운세가 없습니다</div>
-			<button type="button" onclick="location.href='form'">운세 등록하기</button>
+			<button class="btn-notform" type="button" onclick="location.href='form'">운세 등록하기</button>
 		</c:if>
 		<br>
 	</div>
