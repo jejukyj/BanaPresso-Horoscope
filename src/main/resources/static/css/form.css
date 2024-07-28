@@ -1,0 +1,106 @@
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 400;
+    src: url(AppleSDGothicNeoR.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 500;
+    src: url(AppleSDGothicNeoM.woff2) format("woff2");
+}
+
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 700;
+    src: url(AppleSDGothicNeoB.woff2) format("woff2");
+}
+
+.bana-pic{
+	width: 69px;
+	height: 77px;
+	display: block;
+    margin: auto;
+    margin-top: 52px;
+    margin-bottom: 16px;
+}
+
+.box{
+	margin: 0 auto;
+	width: 450px;
+	height: 600px;
+	background-color:#FFECF3;
+	border-radius:17px;
+	box-sizing: border-box;
+	padding-top:38px;
+	/* padding-left:25px; */
+}
+
+h3{
+	font-family: AppleSDGothicNeo;
+    font-weight: 700;
+	font-size: 20px;
+	color: #F1658A;
+	text-align: center;
+}
+
+.form-container{
+	margin-left: 23px;
+}
+
+input{
+	border: 0;
+	border-radius: 7px;
+	outline-color: #F1658A;	
+	margin-top: 8px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+span{
+	font-family: AppleSDGothicNeo;
+    font-weight: 400;
+	font-size: 15px;
+	color: #505050;	
+}
+
+input.form-box{
+	width: 400px;
+	height: 40px;
+}
+
+input.luck-box{
+	width: 400px;
+	height: 150px;
+}
+
+.btn-box{
+	display:flex;
+	justify-content:center;	
+}
+
+button{
+	border: 0;
+	width: 76px;
+	height: 38px;
+	background-color: #F1658A;
+	color: white;
+	box-shadow: 1px 2px 4px rgba(241, 101, 138, 0.5);
+	border-radius: 19px;
+	font-size: 14px;
+}
+
+button:hover{
+	border-color:#F1658A;
+	background-color:white;
+	color: #F1658A;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.bana-pic:hover{
+	cursor: pointer;
+}

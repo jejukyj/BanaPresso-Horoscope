@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ureca.board.model.dao.BoardDAO">
+
+    <select id="selectAll" resultType="com.ureca.board.dto.Board">
+        SELECT id, boardContents, boardWriter, boardPass, createdAt FROM board_table
+    </select>
+    
+    <select id="select" parameterType="int" resultType="com.ureca.board.dto.Board">
+        SELECT id, boardContents, boardWriter, boardPass, createdAt FROM board_table WHERE id = #{id}
+    </select>
+    
+    <select id="identify" parameterType="Board" resultType="com.ureca.board.dto.Board">
+        SELECT * FROM board_table WHERE id = #{id} and boardPass = #{boardPass}
+    </select>
+    
+    <insert id="insert" parameterType="com.ureca.board.dto.Board" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO board_table (boardContents, boardWriter, boardPass)
+        VALUES (#{boardContents}, #{boardWriter}, #{boardPass})
+    </insert>
+    
+    <update id="update" parameterType="com.ureca.board.dto.Board">
+        UPDATE board_table SET boardContents = #{boardContents}, boardWriter = #{boardWriter},
+        boardPass = #{boardPass} WHERE id = #{id}
+    </update>
+    
+    <delete id="delete" parameterType="int">
+        DELETE FROM board_table WHERE id = #{id}
+    </delete>
+    
+</mapper>
