@@ -14,11 +14,11 @@
 		<form method="post" action="form">
 			<div class="form-container">
 				<span>작성자</span><br>
-				<input class="form-box" type="text" name="boardWriter"><br>
+				<input placeholder="이름을 입력해주세요" class="form-box" type="text" name="boardWriter"><br>
 				<span>운세</span><br>
-				<input class="luck-box" type="text" name="boardContents"><br>
+				<input placeholder="운세를 입력해주세요" class="luck-box" type="text" name="boardContents"><br>
 				<span>비밀번호</span><br>
-				<input class="form-box" type="text" name="boardPass"><br>
+				<input placeholder="비밀번호를 입력해주세요" class="form-box" type="text" name="boardPass"><br>
 				</div>
 			<div class="btn-box">
 				<button type="submit">등록</button>
